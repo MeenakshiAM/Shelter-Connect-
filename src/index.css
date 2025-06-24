@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 
-html, body {
-  margin: 0;
+
+
+#root { /* Adjust #root if your React app mounts to a different ID */
+            height: 100%;
+            margin: 0;
   padding: 0;
-  background-color: #f8fafc; /* Optional if not using Tailwind for this */
-}
+  background-color: #f8fafc;
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body is at least the height of the viewport */
+            margin: 0; /* Important: Remove default browser margins */
+            font-family: 'Inter', sans-serif; /* Keep consistent font */
+        }
